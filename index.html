@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- 
+  hello! 
+-->
 <head>
+    <script> 
+        // Initialize dataLayer
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'virtual_page_view',
+            'page_type': 'personal_portfolio',
+            'tracking_status': 'fully_operational'
+        });
+    </script>
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -18,7 +30,7 @@
         <header>
             <h1>Vincent Casotti</h1>
             <nav>
-                <a href="mailto:hello@vincentcasotti.com">Contact</a>
+                <a href="mailto:hello@vincentcasotti.com" onclick="window.dataLayer.push({'event': 'email_click', 'link_text': 'Contact', 'destination': 'mailto:hello@vincentcasotti.com'});">Contact</a>
             </nav>
         </header>
 
@@ -39,7 +51,7 @@
                     <div class="card">
                         <div style="font-size: 3.5rem; margin-bottom: 0.5rem; line-height: 1;">🏕️</div>
                         <h3>Life</h3>
-                        <p>Avid rock climber, outdoor enthusiast, frequenting Yosemite and the broader Sierras. Also enjoy tinkering with bikes, cars and the occasional bridge game.</p>
+                        <p>Avid rock climber and outdoor enthusiast, frequenting Yosemite and the broader Sierras.</p>
                     </div>
                 </div>
             </section>
